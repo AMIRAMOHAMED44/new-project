@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>إنشاء حساب</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="nav">
+  <h1>قلب القرآن </h1>
+  <div>
+    <a href="login.html">تسجيل الدخول</a>
+  </div>
+</nav>
+
+<div class="card">
+  <h2>إنشاء حساب</h2>
+
+  <input id="regName" type="text" placeholder="الاسم">
+  <input id="regEmail" type="email" placeholder="الإيميل">
+  <input id="regPass" type="password" placeholder="كلمة المرور">
+
+  <button id="regBtn">تسجيل</button>
+
+  <p class="switch">
+    لديك حساب بالفعل؟
+    <a href="login.html">تسجيل الدخول</a>
+  </p>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("regBtn").addEventListener("click", register);
+</script>
+</body>
+</html>

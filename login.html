@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>تسجيل الدخول</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="nav">
+  <h1>قلب القرآن </h1>
+  <div>
+    <a href="index.html">إنشاء حساب</a>
+  </div>
+</nav>
+
+<div class="card">
+  <h2>تسجيل الدخول</h2>
+
+  <input id="logEmail" type="email" placeholder="الإيميل">
+  <input id="logPass" type="password" placeholder="كلمة المرور">
+
+  <button id="logBtn">دخول</button>
+
+  <p class="switch">
+    ليس لديك حساب؟
+    <a href="index.html">إنشاء حساب</a>
+  </p>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("logBtn").addEventListener("click", login);
+</script>
+</body>
+</html>

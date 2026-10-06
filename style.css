@@ -1,0 +1,123 @@
+.heart {
+  /* width: 200px; */
+  height: 600px; /* أطول عشان نقدر نوزع العناصر */
+  margin: auto;
+  padding: 0 70px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* المسافة بين كل عنصر */
+}
+
+.surah {
+  width: 150px;
+  height: 150px;
+  background: #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  color: #000080;
+  font-size: 30px;
+  transition: transform 1s;
+}
+
+/* تأثير عند التحويم */
+.surah:hover {
+  transform: scale(1.1);
+}
+
+
+.completed {
+  background: red !important;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+body {
+ background: linear-gradient(
+    to right,       /* التدرج أفقي */
+    #000033,        /* أغمق درجة */
+    #000066,        /* درجة غامقة */
+    #000099,        /* متوسط */
+    #0000cc         /* أفتح شوي */
+  );
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.nav {
+/* background:  #a855f7; */
+      color: white;
+  padding: 15px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.nav a {
+  /* color: white; */
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+/* Card */
+.card {
+  background: white;
+  width: 350px;
+  margin: 200px auto;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000080;
+}
+
+.card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.card button {
+  background: red;
+  color:white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.card button:hover {
+  background: #E5BA41;
+  color: #000080;
+}
+
+.switch {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #000080;
+  font-weight: bold;
+}
